@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(25, 34, 29);
+    color: rgb(182, 217, 217);
+}
+nav{
+    width: 100%;
+    margin-top:1rem;
+    font-size: larger;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li{
+    padding:0 1rem 0 1rem;
+}
+.nav-bar li{
+    padding:0 1rem 0 1rem;
+}
+#name:hover{
+    font-size: x-large;
+    border-left: 3px solid rgb(111, 195, 234);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: 3px solid rgb(111, 195, 234);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition-duration: 0.3s;
+}
+.nav-bar li:hover{
+    border-left: 3px solid rgb(111, 195, 234);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: 3px solid rgb(111, 195, 234);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: smaller;
+    font-style: oblique;
+    transition-duration: 0.3s;
+}
+.hero{
+    margin:2rem;
+    padding:2rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+}
+.right-hero{
+    position: relative;
+    padding: 3rem;
+    display: inline-block;
+}
+.right-hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-left:6px solid rgb(134, 198, 225);
+    border-right: 6px solid rgb(134, 198, 225);
+    border-radius: 49%;
+    box-shadow: 0 0 20px 0  rgb(134, 198, 225);
+    animation: shiftTheBorder 10s linear  infinite  ;
+}
+.right-hero img{
+    border-radius: 50%;
+    display: block;
+}
+@keyframes shiftTheBorder{
+    0%{
+        transform:rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+   
+}
